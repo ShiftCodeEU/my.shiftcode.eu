@@ -1,0 +1,32 @@
+{
+	"name": "cross-app",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"desktop:dev": "tauri dev",
+		"android:dev": "tauri android dev",
+		"tauri": "tauri"
+	},
+	"dependencies": {
+		"@tauri-apps/api": "^2.0.0-alpha.3",
+		"react": "18.3.0-canary-4cd706566-20230512",
+		"react-dom": "18.3.0-canary-4cd706566-20230512",
+		"ui": "workspace:*"
+	},
+	"devDependencies": {
+		"@tauri-apps/cli": "^2.0.0-alpha.8",
+		"@types/node": "^20.1.4",
+		"@types/react": "^18.2.6",
+		"@types/react-dom": "^18.2.4",
+		"@vitejs/plugin-react": "^4.0.0",
+		"eslint-config-custom": "workspace:*",
+		"internal-ip": "^7.0.0",
+		"tsconfig": "workspace:*",
+		"typescript": "^5.0.4",
+		"vite": "^4.3.6"
+	}
+}
